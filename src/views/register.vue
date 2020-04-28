@@ -18,7 +18,7 @@
             </div>
             <div style="    padding: 30px;">
                
-                <div>
+                <div>  
                     <Input prefix="md-mail" placeholder="请输入注册邮箱，用于账号登录" style="width: 100%;" size="large" :v-model="mailbox"  />
                 </div>
                 <div class="gd"></div>

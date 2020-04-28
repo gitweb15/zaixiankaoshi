@@ -9,6 +9,22 @@ Vue.use(VueRouter)
     path: '/register',
     name: 'register',
     component: () => import('../views/register.vue')
+  },{
+    path: '/questions',
+    name: 'questions',
+    component: () => import('../views/questions.vue')
+  },{
+    path: '/header',
+    name: 'header',
+    component: () => import('../components/header.vue')
+  },{
+    path: '/core',
+    name: 'core',
+    component: () => import('../views/core.vue')
+  },{
+    path: '/Examinee',
+    name: 'Examinee',
+    component: () => import('../views/Examinee.vue')
   }
 ]
 
