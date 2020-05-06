@@ -25,7 +25,32 @@ Vue.use(VueRouter)
     path: '/Examinee',
     name: 'Examinee',
     component: () => import('../views/Examinee.vue')
-  }
+  },{
+    path: '/SubAdministrator',
+    name: 'SubAdministrator',
+    component: () => import('../views/SubAdministrator.vue'),
+    children:[ {
+    path: 'ziliuyou',
+    name: 'ziliuyou',
+    component: () => import('../components/ziliuyou.vue')
+  }] 
+  },{
+    path: '/Report',
+    name: 'Report',
+    component: () => import('../views/Report.vue'),
+    children:[ {
+    path: 'Analysis',
+    name: 'Analysis',
+    component: () => import('../components/Analysis.vue')
+  },{
+    path: 'judgepaper',
+    name: 'judgepaper',
+    component: () => import('../components/judgepaper.vue')
+  },{
+    path: 'IntegralAnalysis',
+    name: 'IntegralAnalysis',
+    component: () => import('../components/IntegralAnalysis.vue')
+  }]}
 ]
 
 const router = new VueRouter({
