@@ -1,16 +1,18 @@
-# ks
-
-## Project setup
+# 在线考试系统
+```
+方震、胡振华、夏琪琪
+```
+## 拉取依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行项目
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包
 ```
 npm run build
 ```
